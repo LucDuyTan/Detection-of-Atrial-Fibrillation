@@ -12,7 +12,7 @@ Hệ thống kết hợp tổ hợp bộ ba đặc trưng:
 * **MSSD**: Đo lường biến thiên nhịp tim ngắn hạn trong miền thời gian.
 * **NN50**: Đếm số khoảng RR kế tiếp lệch nhau hơn 50ms.
 
-Các đặc trưng này cấu thành vector đầu vào cho bộ phân loại **Linear SVM** (đã huấn luyện ngoại tuyến) nhằm đưa ra quyết định chẩn đoán chính xác trạng thái AFIB hoặc Non-AFIB với độ trễ thấp và tối ưu hóa tài nguyên vi mạch[cite: 1].
+Các đặc trưng này cấu thành vector đầu vào cho bộ phân loại **Linear SVM** (đã huấn luyện ngoại tuyến) nhằm đưa ra quyết định chẩn đoán chính xác trạng thái AFIB hoặc Non-AFIB với độ trễ thấp và tối ưu hóa tài nguyên phần cứng.
 
 ## ⚙️ Kiến trúc hệ thống (System Architecture)
 Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** bao gồm:
