@@ -16,7 +16,7 @@ Các đặc trưng này cấu thành vector đầu vào cho bộ phân loại **
 
 ## ⚙️ Kiến trúc hệ thống (System Architecture)
 Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** bao gồm:
-1. **Mảng Processing Elements (PE Array):** Gồm 12 phần tử xử lý (PE0 - PE11) hoạt động song song và đồng bộ. Mỗi PE đảm nhiệm tính toán trên một cửa sổ dữ liệu 10 giây[cite: 1].
+1. **Mảng Processing Elements (PE Array):** Gồm 12 phần tử xử lý (PE0 - PE11) hoạt động song song và đồng bộ. Mỗi PE đảm nhiệm tính toán trên một cửa sổ dữ liệu 10 giây.
 2. **Cấu trúc một phần tử xử lý (Processing Element Detail):**
    * **ALU**: Thực hiện các phép toán số học như ADD, SUB, MULT, ACC, ABS, CMP, MAC.
    * **LSU (Load/Store Unit)**: Điều phối luồng dữ liệu nội bộ.
@@ -37,7 +37,7 @@ Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** ba
 | **AFDB**   | 99.98% | 100.00% | 99.98% |
 | **LTAFDB** | 99.45% | 98.30%  | 99.21% |
 
-*Mô hình phần cứng có sai số toán học cực nhỏ ($10^{-5}$) so với mô hình phần mềm Golden Model, không làm sai lệch kết quả phân loại.*
+*Mô hình phần cứng có sai số toán học cực nhỏ $10^{-5}$ so với mô hình phần mềm Golden Model, không làm sai lệch kết quả phân loại.*
 
 ### 2. Tài nguyên phần cứng (Hardware Resources)
 Kết quả tổng hợp tài nguyên phần cứng:
@@ -50,19 +50,4 @@ Kết quả tổng hợp tài nguyên phần cứng:
 | **BRAM** | 18 |
 | **Tần số tối đa ($F_{max}$)** | 130 MHz |
 
----
 
-## 📁 Cấu trúc thư mục (Repository Structure)
-
-```text
-.
-├── codepython/          # Mô hình tham chiếu (Golden Model) & Huấn luyện SVM
-│   ├── pre_processing.py
-│   ├── feature_extraction.py
-│   ├── svm_train.py
-│   └── data/            # Tập dữ liệu mẫu RRI
-├── codeverilog/         # Mã nguồn Verilog HDL
-│   ├── rtl/             # Cấu trúc Datapath, Controller, PE, ALU, LSU, RAM, LUT
-│   ├── tb/              # Testbench kiểm thử phần cứng
-│   └── sim/             # Cấu hình mô phỏng ModelSim / Vivado
-└── README.md            # Tài liệu hướng dẫn dự án
