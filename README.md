@@ -30,14 +30,14 @@ Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** ba
 ## 📊 Kết quả đạt được (Results)
 
 ### 1. Hiệu năng phân loại (Classification Performance)
-Đánh giá trên hai cơ sở dữ liệu chuẩn quốc tế **MIT-BIH Atrial Fibrillation Database (AFDB)** và **LTAFDB**:
+Đánh giá trên hai cơ sở dữ liệu chuẩn quốc tế **MIT-BIH Atrial Fibrillation Database AFDB** và **LTAFDB**:
 
 | Tập dữ liệu (Database) | Độ nhạy (SE) | Độ đặc hiệu (SP) | Độ chính xác (ACC) |
 | :--- | :---: | :---: | :---: |
 | **AFDB**   | 99.98% | 100.00% | 99.98% |
 | **LTAFDB** | 99.45% | 98.30%  | 99.21% |
 
-*Mô hình phần cứng có sai số toán học cực nhỏ $10^{-5}$ so với mô hình phần mềm Golden Model, không làm sai lệch kết quả phân loại.*
+*Mô hình phần cứng có sai số toán học cực nhỏ 10<sup>-5</sup> so với mô hình phần mềm Golden Model, không làm sai lệch kết quả phân loại.*
 
 ### 2. Tài nguyên phần cứng (Hardware Resources)
 Kết quả tổng hợp tài nguyên phần cứng:
