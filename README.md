@@ -20,7 +20,7 @@ Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** ba
 2. **Cấu trúc một phần tử xử lý (Processing Element Detail):**
    * **ALU**: Thực hiện các phép toán số học như ADD, SUB, MULT, ACC, ABS, CMP, MAC.
    * **LSU (Load/Store Unit)**: Điều phối luồng dữ liệu nội bộ.
-   * **Local Data Memory**: Gồm Ping-Pong RAM (nhận dữ liệu liên tục), Uni RAM, NN50 REG, PERM REG.
+   * **Local Data Memory**: Gồm Ping-Pong RAM (nhận dữ liệu từ bên ngoài), Uni RAM, NN50 REG, PERM REG.
    * **LUT (Look-Up Table)**: Bảng tra cứu xấp xỉ các hàm phi tuyến (logarit/phân số) giúp tiết kiệm tài nguyên logic.
 3. **Controller:** Khối điều khiển dựa trên Máy trạng thái hữu hạn (FSM) 10 pha để điều phối luồng dữ liệu.
 4. **Định dạng số:** Sử dụng định dạng số nguyên cố định có dấu **Signed Fixed-point Q16.16**.
