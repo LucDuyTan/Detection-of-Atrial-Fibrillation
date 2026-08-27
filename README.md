@@ -22,7 +22,7 @@ Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** ba
 
 ### 1. Kiến trúc tổng thể (Overall System Architecture)
 
-![Overall System Architecture](images/overall_architecture.png)
+<img width="762" height="571" alt="image" src="https://github.com/user-attachments/assets/a92456fc-884c-4811-953d-6ae1a0368648" />
 
 * **PEA Controller**: Khối điều khiển trung tâm phát tín hiệu điều khiển đồng bộ đến toàn bộ 12 phần tử xử lý (PE0 - PE11) để phối hợp chu trình tính toán.
 * **Mảng PE (PE0 – PE11)**: Gồm 12 phần tử xử lý hoạt động song song. Mỗi PE đảm nhiệm tính toán trên một cửa sổ dữ liệu 10 giây.
@@ -34,7 +34,7 @@ Hệ thống phần cứng được thiết kế theo quy trình **Top-Down** ba
 
 ### 2. Cấu trúc chi tiết phần tử xử lý (Processing Element Detail)
 
-![Processing Element Architecture](images/pe_architecture.png)
+<img width="972" height="572" alt="image" src="https://github.com/user-attachments/assets/6a266300-0f79-491c-8cbd-3673117a8f44" />
 
 Một phần tử xử lý (PE) bao gồm các thành phần chính:
 
